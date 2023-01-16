@@ -683,7 +683,30 @@ margin: 15px 0;
     </script>
     
       <!-- Video section -->
-    <div id="video" class="story-video section-padding bg-img bg-fixed" data-scroll-index="2" data-overlay-dark="2" data-background="images/banner/1.jpg" style="background-image: url(&quot;images/banner/1.jpg&quot;);">
+      <style>
+        
+      .youtube {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+      }
+      
+      /* Then style the iframe to fit in the container div with full height and width */
+      .responsive-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+      }
+        
+      </style>
+      
+      
+    <div id="video" class="story-video section-padding bg-img bg-fixed" data-scroll-index="2" data-overlay-dark="2" data-background="w2/1.jpg" style="background-image: url(&quot;w2/1.jpg&quot;);">
         <div class="container">
             <div class="video-wrapper">
                 <div class="row">
@@ -694,16 +717,9 @@ margin: 15px 0;
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12 mb-60 img text-center">
-                        <a class="vid valign" href="https://bodaeldaymiguel.github.io/wedding/#">
-                            <div class="vid-butn">
-                                <span class="icon"><i class="ti-control-play"></i></span>
-                            </div>
-                        </a>
-                    </div>
-
-                </div>
+                      <div class="youtube">
+                        <iframe class="responsive-iframe" src="https://www.youtube.com/embed/HtShdFbQdkY"></iframe>
+                      </div>
             </div>
         </div>
     </div>
@@ -779,15 +795,16 @@ margin: 15px 0;
             </div>
         </div>
     </div>
+    
+    
     <!-- Banner section -->
-    <div id="banner" class="section-padding bg-img bg-fixed" data-overlay-dark="1" data-background="images/banner/1.jpg" style="background-image: url(&quot;images/banner/1.jpg&quot;);">
+    <div id="banner" class="section-padding bg-img bg-fixed" data-overlay-dark="1" data-background="w2/std.jpg" style="background-image: url(&quot;w2/std.jpg&quot;);">
         <div class="container">
             <div class="row">
                 <div class="section-head col-md-12">
                     <h6>Save the date</h6>
                     <h2>Esperamos verlos pronto</h2>
                     <h1>01.04.2023</h1>
-                    <h1><i class="ti-heart"></i></h1>
                 </div>
             </div>
         </div>
@@ -795,6 +812,22 @@ margin: 15px 0;
     
     
     <!-- When & Where section -->
+    <style>
+              .iframes {
+                position: relative;
+                padding-bottom: 75%; // This is the aspect ratio
+                height: 0;
+                overflow: hidden;
+              }
+              .iframes iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100% !important;
+                height: 100% !important;
+              }
+            </style>
+    
     <div id="whenwhere" class="when-where section-padding" data-scroll-index="4">
         <div class="container">
             <div class="row">
@@ -806,15 +839,17 @@ margin: 15px 0;
             <div class="row">
                 <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
                     <div class="img left">
-                        <img src="w2/01.jpg" alt="">
+                        <div class="iframes">
+                         
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.460482846074!2d-98.87453508578085!3d19.478814644250335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e71baa762d5b%3A0xefccef906ff793e2!2sParroquia%20de%20San%20Luis%20Obispo%20Huexotla!5e0!3m2!1ses-419!2smx!4v1673824579492!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                          
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6 valign animate-box" data-animate-effect="fadeInRight">
                     <div class="content">
                         <div class="date">
                           <img src="w2/rings.png" alt="">
-                            <!--<h3>24</h3>
-                            <h6>Dec 2022</h6>-->
                         </div>
                         <div class="cont">
                             <div class="info">
@@ -870,15 +905,17 @@ margin: 15px 0;
                                     </div>
                                 </li>
 
-                                <li>  <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.672778464467!2d89.55846281543346!3d22.814585729793365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff901c9481c799:0x92f932dd6112f8ff!2sHotel+Sheraton+Buliding,+29+Khan+Jahan+Ali+Rd,+Khulna!5e0!3m2!1sen!2sbd!4v1558933503904!5m2!1sen!2sbd" class="location popup-gmaps">Ubicación</a></li>
-
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 order1 animate-box" data-animate-effect="fadeInRight">
                     <div class="img">
-                        <img src="w2/02.jpg" alt="">
+                        <div class="iframes">
+                         
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.8684435329483!2d-98.87229318427603!3d19.504295007539792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e7a5405e767f%3A0xe2ef3f39e1996fc6!2sSal%C3%B3n%20de%20Eventos%20Imperio%20Texcal!5e0!3m2!1ses-419!2smx!4v1673824664266!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                          
+                        </div>
                     </div>
                 </div>
             </div>
@@ -922,25 +959,31 @@ margin: 15px 0;
    
 
     <!-- RSVP Form section -->
+    <style>
+      .forms {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 200%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+      }
+    </style>
+    
+    
     <div id="rsvp" class="rsvp section-padding bg-img bg-fixed" data-background="images/banner/2.jpg" data-scroll-index="5" style="background-image: url(&quot;images/banner/2.jpg&quot;);">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 offset-md-3 bg-white p-60">
                     <h2 class="text-center">Invitación</h2>
                     <h6 class="text-center">¿Nos puedes acompañar?</h6>
-                    <form class="contact__form" method="post" action="http://youareinvited.mx/demo-premium/mail.php">
-                      
-                        <!-- form element -->
-                        <div class="row">
-                                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScpnaCKCCnbmT3OyHJzwNosMbqPTnUZLeX2ybOZDnReec2Fow/viewform?embedded=true" width="640" height="1281" frameborder="0" marginheight="0" marginwidth="0">Cargando.
-                                </iframe>
-                            </div>
-                    </form>
                 </div>
             </div>
+            <!-- form element -->
+                          <div class="forms">
+                                <iframe class="responsive-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLScpnaCKCCnbmT3OyHJzwNosMbqPTnUZLeX2ybOZDnReec2Fow/viewform?embedded=true" width="640" height="1281" style="border:0;" >Cargando.
+                                </iframe>
+                            </div>   
         </div>
     </div>
-
 
 
 
@@ -1041,57 +1084,50 @@ margin: 15px 0;
             </div>
             <div class="row">
                 <div class="col-md-10 offset-md-1">
+                  
                     <div class="owl-carousel owl-theme owl-loaded owl-drag">
-                        
-                        
-                        
-
                     <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-725px, 0px, 0px); transition: all 0s ease 0s; width: 1595px;"><div class="owl-item cloned" style="width: 135px; margin-right: 10px;"><div class="gift-registry-logo">
-                            <a href="https://bodaeldaymiguel.github.io/wedding/#0"><img src="w2/3(3).jpg" alt=""></a>
+                            <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51117394?_ga=2.191038632.304183218.1673829354-140063225.1673829354"><img src="w2/3(3).jpg" alt=""></a>
                         </div></div><div class="owl-item cloned" style="width: 135px; margin-right: 10px;"><div class="gift-registry-logo">
-                            <a href="https://bodaeldaymiguel.github.io/wedding/#0"><img src="w2/1(3).jpg" alt=""></a>
+                            <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51117394?_ga=2.191038632.304183218.1673829354-140063225.1673829354"><img src="w2/1(3).jpg" alt=""></a>
                         </div></div><div class="owl-item cloned" style="width: 135px; margin-right: 10px;"><div class="gift-registry-logo">
-                            <a href="https://bodaeldaymiguel.github.io/wedding/#0"><img src="w2/2(3).jpg" alt=""></a>
+                            <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51117394?_ga=2.191038632.304183218.1673829354-140063225.1673829354"><img src="w2/2(3).jpg" alt=""></a>
                         </div></div><div class="owl-item cloned" style="width: 135px; margin-right: 10px;"><div class="gift-registry-logo">
-                            <a href="https://bodaeldaymiguel.github.io/wedding/#0"><img src="w2/3(3).jpg" alt=""></a>
+                            <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51117394?_ga=2.191038632.304183218.1673829354-140063225.1673829354"><img src="w2/3(3).jpg" alt=""></a>
                         </div></div><div class="owl-item" style="width: 135px; margin-right: 10px;"><div class="gift-registry-logo">
-                            <a href="https://bodaeldaymiguel.github.io/wedding/#0"><img src="w2/1(3).jpg" alt=""></a>
+                            <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51117394?_ga=2.191038632.304183218.1673829354-140063225.1673829354"><img src="w2/1(3).jpg" alt=""></a>
                         </div></div><div class="owl-item active" style="width: 135px; margin-right: 10px;"><div class="gift-registry-logo">
-                            <a href="https://bodaeldaymiguel.github.io/wedding/#0"><img src="w2/2(3).jpg" alt=""></a>
+                            <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51117394?_ga=2.191038632.304183218.1673829354-140063225.1673829354"><img src="w2/2(3).jpg" alt=""></a>
                         </div></div><div class="owl-item active" style="width: 135px; margin-right: 10px;"><div class="gift-registry-logo">
-                            <a href="https://bodaeldaymiguel.github.io/wedding/#0"><img src="w2/3(3).jpg" alt=""></a>
+                            <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51117394?_ga=2.191038632.304183218.1673829354-140063225.1673829354"><img src="w2/3(3).jpg" alt=""></a>
                         </div></div><div class="owl-item cloned active" style="width: 135px; margin-right: 10px;"><div class="gift-registry-logo">
-                            <a href="https://bodaeldaymiguel.github.io/wedding/#0"><img src="w2/1(3).jpg" alt=""></a>
+                            <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51117394?_ga=2.191038632.304183218.1673829354-140063225.1673829354"><img src="w2/1(3).jpg" alt=""></a>
                         </div></div><div class="owl-item cloned active" style="width: 135px; margin-right: 10px;"><div class="gift-registry-logo">
-                            <a href="https://bodaeldaymiguel.github.io/wedding/#0"><img src="w2/2(3).jpg" alt=""></a>
+                            <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51117394?_ga=2.191038632.304183218.1673829354-140063225.1673829354"><img src="w2/2(3).jpg" alt=""></a>
                         </div></div><div class="owl-item cloned" style="width: 135px; margin-right: 10px;"><div class="gift-registry-logo">
-                            <a href="https://bodaeldaymiguel.github.io/wedding/#0"><img src="w2/3(3).jpg" alt=""></a>
+                            <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51117394?_ga=2.191038632.304183218.1673829354-140063225.1673829354"><img src="w2/3(3).jpg" alt=""></a>
                         </div></div><div class="owl-item cloned" style="width: 135px; margin-right: 10px;"><div class="gift-registry-logo">
-                            <a href="https://bodaeldaymiguel.github.io/wedding/#0"><img src="w2/1(3).jpg" alt=""></a>
+                            <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51117394?_ga=2.191038632.304183218.1673829354-140063225.1673829354"><img src="w2/1(3).jpg" alt=""></a>
                         </div></div></div></div><div class="owl-nav disabled"><div class="owl-prev">prev</div><div class="owl-next">next</div></div><div class="owl-dots disabled"></div></div>
-                </div>
+                  
+                  
+               </div>
             </div>
-        </div>
-    </div>
+      </div>
+   </div>
 
 
     <!-- Instagram section -->
     <div class="insta">
         <div class="container flex">
             <div class="img">
-                <a href="https://bodaeldaymiguel.github.io/wedding/#0"> <img src="w2/1(4).jpg" alt=""> </a> <i class="ti-instagram"></i>
+                <a href="https://bodaeldaymiguel.github.io/wedding/#0"> <img src="w2/1(4).jpg" alt=""> </a> 
             </div>
             <div class="img">
-                <a href="https://bodaeldaymiguel.github.io/wedding/#0"> <img src="w2/2(4).jpg" alt=""> </a> <i class="ti-instagram"></i>
+                <a href="https://bodaeldaymiguel.github.io/wedding/#0"> <img src="w2/5(1).jpg" alt=""> </a> 
             </div>
             <div class="img">
-                <a href="https://bodaeldaymiguel.github.io/wedding/#0"> <img src="w2/3(4).jpg" alt=""> </a> <i class="ti-instagram"></i>
-            </div>
-            <div class="img">
-                <a href="https://bodaeldaymiguel.github.io/wedding/#0"> <img src="w2/4(3).jpg" alt=""> </a> <i class="ti-instagram"></i>
-            </div>
-            <div class="img">
-                <a href="https://bodaeldaymiguel.github.io/wedding/#0"> <img src="w2/5(1).jpg" alt=""> </a> <i class="ti-instagram"></i>
+                <a href="https://bodaeldaymiguel.github.io/wedding/#0"> <img src="w2/2(4).jpg" alt=""> </a> 
             </div>
             <div class="follow">
                 <a href="https://bodaeldaymiguel.github.io/wedding/#0" class="text-bg"> <span><i class="ti-instagram"></i> #Elda&amp;MiguelWedding</span></a>
