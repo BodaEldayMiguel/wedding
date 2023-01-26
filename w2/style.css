@@ -2726,7 +2726,7 @@ overflow: hidden !important;
 .social-bar {
 	position: fixed;
 	right: 0;
-	top: 50%;
+	top: 70%;
 	font-size: 1.0rem;
 	color: black;
 	display: flex;
